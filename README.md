@@ -123,6 +123,8 @@ AI Booth Assistant
 3. Check the API URL settings in Scripts to ensure they point to the running server (e.g., `http://localhost:3000`).
 4. Press **Play** to test.
 
+![Demo](gif/2026-02-1017-54-21-ezgif.com-video-to-gif-converter.gif)
+
 ## ❓ Troubleshooting
 
 ### ⚠️ Unity: Pink Shader Error or `ArgumentNullException`
