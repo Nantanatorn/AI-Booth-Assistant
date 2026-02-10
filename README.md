@@ -5,7 +5,7 @@ The **AI Booth Assistant** project is designed to help answer questions and prov
 ## 🛠️ Tech Stack
 
 - **Frontend**: Unity (C#)
-- **Backend Runtime**: Node.js
+- **Backend**: Node.js
 - **Framework**: Express.js
 - **Database**: MongoDB (Mongoose)
 - **AI Model**: gemini-2.5-flash-native-audio-preview-12-2025
