@@ -144,7 +144,7 @@ Follow these steps to fix it:
 5. Search for **"RoundedCorner"** and add it.
    - _Note:_ If you cannot find it, click the **Eye Icon** 👁️ in the search window to show hidden shaders.
 
-   ![Fix Demo](gif/2026-02-10 16-35-07.gif)
+   ![Fix Demo](gif/2026-02-10%2016-35-07.gif)
 
 ## 📦 Build Backend to .exe (Optional)
 
