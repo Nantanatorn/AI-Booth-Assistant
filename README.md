@@ -4,7 +4,7 @@ The **AI Booth Assistant** project is designed to help answer questions and prov
 
 ## 🛠️ Tech Stack
 
-- **Game Engine**: Unity (C#)
+- **Frontend**: Unity (C#)
 - **Backend Runtime**: Node.js
 - **Framework**: Express.js
 - **Database**: MongoDB (Mongoose)
@@ -31,9 +31,16 @@ The **AI Booth Assistant** project is designed to help answer questions and prov
 
 ## 📂 Project Structure
 
-- `AI Unity/`: Unity Project Source Code (Client)
-- `chat api/`: Backend API Source Code (Server)
-- `Build/`: Directory for built files (if any)
+```text
+AI Booth Assistant
+├── .vscode
+├── AI Unity (Client)
+├── chat api (Server)
+├── Build
+├── .gitattributes
+├── .gitignore
+└── README.md
+```
 
 ---
 
@@ -60,11 +67,12 @@ Prerequisites: [Node.js](https://nodejs.org/) and [MongoDB](https://www.mongodb.
    ```
 4. Run Server:
    - **For API & Upload PDF:**
-     1. Run the main server first:
+     1. Place your PDF file into the `Product` folder.
+     2. Run the main server:
         ```bash
         npm start
         ```
-     2. Open another Terminal to run the PDF upload script:
+     3. Open another Terminal to run the PDF upload script:
         ```bash
         cd "api-call"
         node seed_request.js
@@ -73,7 +81,7 @@ Prerequisites: [Node.js](https://nodejs.org/) and [MongoDB](https://www.mongodb.
 
    - **For AI Chat:**
      ```bash
-     node xD.js
+     node AI-Booth.js
      ```
 
 5. Setup MongoDB Vector Search Index
@@ -131,3 +139,39 @@ Follow these steps to fix it:
 4. Click the plus (+) button to add a Shader.
 5. Search for **"RoundedCorner"** and add it.
    - _Note:_ If you cannot find it, click the **Eye Icon** 👁️ in the search window to show hidden shaders.
+
+## 📦 Build Backend to .exe (Optional)
+
+To compile the Node.js backend into an executable file, it is recommended to bundle the code first using **esbuild** to handle dependencies correctly before using **pkg**.
+
+### Step 1: Install Tools
+
+Run these commands in your terminal (one-time setup):
+
+```bash
+npm install -g pkg
+npm install esbuild --save-dev
+```
+
+### Step 2: Bundle Files
+
+Use `esbuild` to bundle `AI-Booth.js`, `prompt2.js`, and other dependencies into a single file (`app_bundled.js`) to prevent errors:
+
+```bash
+npx esbuild AI-Booth.js --bundle --platform=node --target=node18 --outfile=app_bundled.js
+```
+
+_After running this, a new file `app_bundled.js` will be created._
+
+### Step 3: Create .exe
+
+Use `pkg` on the bundled file to generate the executable:
+
+```bash
+pkg app_bundled.js --targets node18-win-x64 --output Build/MyAssistant.exe
+```
+
+> **Note:**
+>
+> - You can also build `server.js` using the same method if needed (e.g., `npx esbuild server.js ...`).
+> - Ensure the `.env` file is in the same folder as the `.exe` for it to work.
