@@ -64,10 +64,10 @@ AI Booth Assistant
    ```
 3. Create a `.env` file in the `chat api` folder and configure the following:
    ```env
-   PORT= Websocket Port
-   PORT1= PDF upload API PORT
-   MONGO_URL=mongodb://localhost:27017/your_database_name
-   GEMINI_API_KEY=your_gemini_api_key
+   PORT= (Websocket PORT)
+   PORT1= (PDF upload API PORT)
+   MONGO_URL= (MongoDB URL)
+   GEMINI_API_KEY= (Gemini API Key)
    ```
 4. Run Server:
    - **For API & Upload PDF:**
@@ -119,7 +119,7 @@ AI Booth Assistant
 ### 2. Unity Setup (Client)
 
 1. Open **Unity Hub** and add the project from the `AI Unity` folder.
-2. Open the Main Scene by navigating to **Project** > **Scenes** > **Hand-Game** > **HandGame**.
+2. Open the Main Scene by navigating to **Project** > **Scenes** > **AI-Booth** > **AI-Booth**.
 3. Check the API URL settings in Scripts to ensure they point to the running server (e.g., `http://localhost:3000`).
 4. Press **Play** to test.
 
