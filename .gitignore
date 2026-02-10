@@ -1,0 +1,44 @@
+# -------------------
+# ส่วนของ Node.js (chat api)
+# -------------------
+node_modules/
+npm-debug.log
+yarn-error.log
+.env
+
+# -------------------
+# ส่วนของ Unity (AI Unity)
+# -------------------
+# เอา / นำหน้าออก เพื่อให้มันหา Library ในโฟลเดอร์ย่อยเจอ
+[Ll]ibrary/
+[Tt]emp/
+[Oo]bj/
+[Bb]uilds/
+[Ll]ogs/
+[Uu]ser[Ss]ettings/
+[Mm]emoryCaptures/
+
+# นามสกุลไฟล์ขยะของ Unity/Visual Studio
+*.csproj
+*.unityproj
+*.sln
+*.suo
+*.tmp
+*.user
+*.userprefs
+*.pidb
+*.booproj
+*.svd
+*.pdb
+*.opendb
+*.VC.db
+
+# -------------------
+# ส่วนอื่นๆ (Global)
+# -------------------
+# กันโฟลเดอร์ Build สีส้มที่หน้าแรก
+/Build/
+
+# กันการตั้งค่า Editor ส่วนตัว
+.vscode/
+.DS_Store
