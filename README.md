@@ -61,7 +61,7 @@ Prerequisites: [Node.js](https://nodejs.org/) and [MongoDB](https://www.mongodb.
 3. Create a `.env` file in the `chat api` folder and configure the following:
    ```env
    PORT= Websocket Port
-   PORT1= PDF Port
+   PORT1= PDF upload API PORT
    MONGO_URL=mongodb://localhost:27017/your_database_name
    GEMINI_API_KEY=your_gemini_api_key
    ```
