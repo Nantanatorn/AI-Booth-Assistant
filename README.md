@@ -46,9 +46,13 @@ AI Booth Assistant
 
 ## 🚀 Installation & Setup
 
-### 1. Backend Setup (API)
+### Prerequisites
 
-Prerequisites: [Node.js](https://nodejs.org/) and [MongoDB](https://www.mongodb.com/).
+- [Unity](https://unity.com/)
+- [Node.js](https://nodejs.org/)
+- [MongoDB](https://www.mongodb.com/)
+
+### 1. Backend Setup (API)
 
 1. Open Terminal and navigate to the `chat api` folder:
    ```bash
@@ -116,7 +120,7 @@ Prerequisites: [Node.js](https://nodejs.org/) and [MongoDB](https://www.mongodb.
 
 1. Open **Unity Hub** and add the project from the `AI Unity` folder.
 2. Open the Main Scene by navigating to **Project** > **Scenes** > **Hand-Game** > **HandGame**.
-3. Check the API URL settings in Scripts (e.g., `StageManager.cs` or `Loopchat.cs`) to ensure they point to the running server (e.g., `http://localhost:3000`).
+3. Check the API URL settings in Scripts to ensure they point to the running server (e.g., `http://localhost:3000`).
 4. Press **Play** to test.
 
 ## ❓ Troubleshooting
