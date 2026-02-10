@@ -1,6 +1,6 @@
 # AI Booth Assistant 🤖
 
-The **AI Booth Assistant** project is designed to help answer questions and provide information about products or services at exhibition booths. It features a collaboration between **Unity Connection** for the Avatar display and a **Node.js API** that connects to **Google Gemini** and **MongoDB** to process responses from a Knowledge Base.
+The **AI Booth Assistant** project is designed to help answer questions and provide information about products or services at exhibition booths. It features a collaboration between **Unity** for the Avatar display and a **Node.js API** that connects to **Google Gemini** and **MongoDB** to process responses from a Knowledge Base.
 
 ## 🛠️ Tech Stack
 
@@ -8,7 +8,7 @@ The **AI Booth Assistant** project is designed to help answer questions and prov
 - **Backend Runtime**: Node.js
 - **Framework**: Express.js
 - **Database**: MongoDB (Mongoose)
-- **AI Model**: Google Gemini (DeepMind)
+- **AI Model**: gemini-2.5-flash-native-audio-preview-12-2025
 - **Libraries**: LangChain, Dotenv, PDF-Parse
 
 ## 🌟 Features
